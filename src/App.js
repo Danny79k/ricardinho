@@ -18,7 +18,7 @@ function App() {
       <header className="App-header">
         <h1 className='title'>Rick & Morty</h1>
         {
-          characters ? (<Characters characters={characters}></Characters>) : (<><img src={imageRickAndMorty} className="Rick & Morty" alt="img-home" />
+          characters ? (<Characters characters={characters} setCharacters={setCharacters}></Characters>) : (<><img src={imageRickAndMorty} className="Rick & Morty" alt="img-home" />
           <button onClick={reqApi} className='btn-search'>Buscar Personaje</button></>)
         }
       </header>
